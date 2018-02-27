@@ -1,0 +1,135 @@
+some pov:
+- React is the V in mvc OR is the alternative to mvc (a different way of working)
+
+why learn react:
+- leader in f.e. frameworks
+-
+-
+- react native truely native apps 
+- can use sketch files 
+
+download expo on desktop in terminal to have a nice fast workflow. 
+air bb style guides 
+
+
+JSX
+
+- extension of the javascript languge
+- has to be compiled into vanilla javascript
+- write code with an xml like syntax
+- drawback is it has to be compiled 
+
+
+Components:
+
+- react apps are built on components.
+- components are composable 
+- like lego blocks
+2 flavors:
+    - simple or stateful
+-simple component: (functinal)
+    -just a function with a couple features:
+        -takes in props (which is an object)
+        -returns JSX
+        
+-stateful componet: (class based)
+    -can keep track of state internally
+    - defined as classes that extends the react component class
+    - extend react.Component class
+    - define a render method that returns JSX
+     the render method has to return a block of jsx
+        - has to have a single top level node. have to wrap everthing in a div
+        
+        have to wrap a multiline thing you want to return in parenthesis (expression)
+        
+
+
+LIFTING UP STATE
+
+- 
+
+
+
+VIRTUAL DOM
+
+-react keeps a virtual dom
+-keeps a lw description of the virtual dom
+-all done in javascript
+
+
+
+can't use 'class' because already keyword. so use : className for css classes 
+
+
+2/26 notes: (day 2 notes)
+
+PROPS vs STATE
+
+props:
+    - passed in (from outside)
+    - we treat props as immutable
+    - in a class based method 
+    
+state:
+    - mutable 
+    - internal (might pass state down as a prop to another component, but through the owner of that state)
+        - state trickles down from top
+    - use setState()
+    
+    
+PROPS:
+    - object
+    - change riggers an update
+    - a component should not change its props
+    - a component should provide props to its children (props provided by parent, come in from outside)
+    - usually used to provide data or configure the component
+    - usually configure or provide data
+    
+STATE
+    - object
+    - any time you change state (as long as with setState()) then in triggers and update in the component and re-renders itself
+    - a component sets state internally (should not come from outside)
+    - a component should also provide default values for state (like in constructor name)
+    - a state should not be shared (react actually makes sharing very hard)
+    - state is internal or private 
+    - state determines the state of the component
+    
+import from:
+    pass
+    
+iterator & key:
+
+- if you have an array of things and want to generate jsx, then you would need to have a key value
+
+- keys only need to be unique for children
+- 
+
+map
+
+- when u want to iterate through jsx and display prob gonna map it
+
+const items = this.props.items.map((item, index) =>{
+    return <li key={index}>{item.name}</li>
+})
+
+return(
+    <div>
+    <ol>
+        {items}
+    </ol>
+    </div>
+)
+
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+////
